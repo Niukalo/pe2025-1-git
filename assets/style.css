@@ -1,0 +1,34 @@
+
+body {
+    background-image: url(./css/img.jpg);
+}
+
+
+header {
+
+}
+h1 {
+    color: #926239;
+    text-align: center;
+}
+p {
+    color: #926239;
+    text-align: center;
+}
+
+
+button {
+    background-color: url(/assets/css/img.jpg) ;
+    color: #926239;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 32px;
+    border-radius: 8px;
+    border: #926239;
+    display: inline-block;
+}
+button:hover {
+    background-color: #926239;
+    color: #000;
+    color: #000;
+}
