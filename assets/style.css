@@ -9,23 +9,22 @@ body {
 }
 
 .beach {
-  background-image: url(./css/img.jpg);
-  background-repeat: no-repeat;
+  padding-top: 30%;
+  height: 100vh;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  padding-top: 30%;
+  background-image: url(./css/img.jpg);
+  background-repeat: no-repeat;
   text-align: center;
 }
- .header-section {
-    color: #926239;
+.header-section {
   text-align: center;
- }
+  color: #926239;
+}
 h1 {
   margin: 0;
   font-size: xx-large;
 }
-
 
 .button {
   display: inline-block;
@@ -38,7 +37,11 @@ h1 {
   color: white;
 }
 .button:hover {
-  background-color: #926239;
+  background-color: green;
+}
+
+.button:active {
+  background-color: #3e8e41;
 }
 
 .section {
