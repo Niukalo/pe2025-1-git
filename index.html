@@ -3,45 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beach</title>
+    <title>CSS Intro</title>
+    <link rel="stylesheet" href="./assets/reset.css" />
     <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <section class="beach">
-      <div class="header-section">
-        <h1>Welcome To The Beach</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem.
-        </p>
-        
-        <button class="button">Read more</button>
+    <article class="user-card">
+      <div class="bg">
+        <i class="fa-solid fa-pencil"></i>
       </div>
-    </section>
-    <section class="section brown-bg">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minus
-      impedit maxime, quae soluta quis cumque perferendis! Doloribus quaerat,
-      placeat iste facere, aspernatur ex cum veritatis laudantium...</p>
-    </section>
 
-    <section class="section light-bg">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minus
-        impedit maxime, quae soluta quis cumque perferendis! Doloribus quaerat,
-        placeat iste facere, aspernatur ex cum veritatis laudantium...
-      </p>
-    </section>
-
-    <section class="section grid-section">
-      <p class="brown-bg grid-p">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolorum
-        est, molestias dolores quis sunt nobis temporibus veritatis libero odio!
-      </p><p class="light-bg grid-p">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolorum
-        est, molestias dolores quis sunt nobis temporibus veritatis libero odio!
-      </p><p class="brown-bg grid-p">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolorum
-        est, molestias dolores quis sunt nobis temporibus veritatis libero odio!
-      </p>
-    </section>
+      <div class="content-wrapper">
+        <img
+          class="userImg"
+          src="https://images.pexels.com/photos/13245519/pexels-photo-13245519.jpeg"
+          alt="Jane S. Doe"
+        />
+        <h2 class="userName">Jane S. Doe</h2>
+        <div class="userGeoposition">Amsterdam, Netherlands</div>
+        <div class="job">Copywriter</div>
+        <p class="experience">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          quaerat qui quae omnis sint tempora! Eveniet deleniti hic asperiores
+          quia.
+        </p>
+        <footer>
+          <i class="userSocialLink fa-brands fa-instagram"></i>
+          <i class="userSocialLink fa-brands fa-twitter"></i>
+          <i class="userSocialLink fa-brands fa-facebook-f"></i>
+      </footer>
+      </div>
+    </article>
   </body>
 </html>
