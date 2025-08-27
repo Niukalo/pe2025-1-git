@@ -1,82 +1,157 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
-
-html {
-  --user-photo-with: 150px;
-}
-
 body {
-  font-family: sans-serif;
-  line-height: 1.2;
+  font-family: Arial, Helvetica, Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0.2em 0;
+}
+
+header p {
+  font-size: large;
+  max-width: fit-content;
+  text-align: center;
+  margin: 0.2em 0 1em 0;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: white;
+  border: white 2px solid;
+  padding: 10px 20px;
 }
 
-.user-card {
-  max-width: 300px;
-  margin: 50px auto;
-  min-width: 250px;
-  border-radius: 30px;
-  box-shadow: 0 0 10px gray;
-  overflow: hidden;
+.section1,
+.section3 {
+  background-color: #e6e6e6;
+  padding: 60px 20px;
   text-align: center;
 }
 
-.bg {
-  background-image: url("https://images.pexels.com/photos/1154610/pexels-photo-1154610.jpeg");
-  height: 150px;
+.section1 h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+  flex-wrap: wrap; /* робить адаптивним */
+}
+
+.two-columns p {
+  flex: 1;
+  max-width: 450px;
+  line-height: 1.6;
+}
+
+.section2 {
+  background-color: #333;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap; /* для адаптивності */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.card h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.section3 h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.section4 {
+  display: flex;
+  flex-wrap: wrap;
   color: white;
-  padding: 25px;
-  text-align: right;
 }
 
-.content-wrapper {
-  padding: 0 1em 1em;
-}
-.userImg {
-  width: var(--user-photo-with);
-  height: var(--user-photo-with);
-  object-fit: cover;
-  border-radius: 50%;
-  display: inline-block;
-  margin-top: calc((-1) * var(--user-photo-with) / 2);
-  border: 2px solid white;
+.contact-us,
+.about-company {
+  flex: 1;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-.userName {
-  font-size: 1.5rem;
-  margin: 0.5em 0;
+.contact-us {
+  background-color: #2196f3; /* синій */
 }
 
-.userGeoposition {
-  font-size: 1rem;
-  margin: 0.5em 0;
-}
-.job {
-  font-size: 1.2rem;
-  margin: 0.4em 0;
-}
-.experiense {
-  font-size: 1rem;
-  margin: 1.2em 0;
+.about-company {
+  background-color: #333; /* темний */
 }
 
-.userSocialLink {
-  background-color: gray;
-  color: white;
-  font-size: 2.3rem;
-  border-radius: 50%;
-  padding-top: 10px;
-  width: 50px;
-  height: 50px;
+.section4 h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
-.userSocialLink + .userSocialLink {
-  margin-left: 35px;
+.section4 p {
+  max-width: 600px;
+  margin: 0 auto 10px auto;
+  line-height: 1.6;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  background-color: #000;
+  color: #fff;
+}
+
+.site-footer a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-left,
+.footer-right {
+  margin: 5px 0;
 }
