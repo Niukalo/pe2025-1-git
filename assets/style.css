@@ -1,161 +1,67 @@
 * {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-font-size: 1.1em;
-line-height: 1.5;
+    font-family: Arial, sans-serif;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  padding: 20px;
-  background-color: #333;
-  color: white;
+.header {
+    background-color: #333;
+    padding: 15px 30px;
 }
 
-header h1 {
-  font-size: 3em;
-  margin: 0.2em 0;
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-header p {
-  font-size: large;
-  max-width: fit-content;
-  text-align: center;
-  margin: 0.2em 0 1em 0;
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: italic;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-  border: gray 0.1px solid;
-  padding: 17.6px 35.2px;
-   margin: 8.8px 0;
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
 }
 
-.colums,
-.topic {
-  background-color: #e6e6e6;
-  padding: 60px 20px;
-  text-align: center;
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: color 0.3s;
 }
 
-.colums h1 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 30px;
+.nav-menu a:hover {
+    color: #ccc;
 }
 
-.two-columns {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: left;
-  flex-wrap: wrap; 
-  color: #333;/* робить адаптивним */
+.contact-btn {
+    color: white;
+    border: 2px solid white;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.3s;
 }
 
-.two-columns p {
-  flex: 1;
-  max-width: 450px;
-  line-height: 1.6;
-}
-
-.userCard {
-  background-color: #333;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.cards-container {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap; /* для адаптивності */
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.card {
-  background-color: #fff;
-  color: #333;
-  padding: 20px;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-
-.card h2 {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-.topic h1 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-.contacs {
-  display: flex;
-  flex-wrap: wrap;
-  color: white;
-}
-
-.contact-us,
-.about-company {
-  flex: 1;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.contact-us {
-  background-color: #2196f3; /* синій */
-}
-
-.about-company {
-  background-color: #333; /* темний */
-}
-
-.contacs h2 {
-  margin-bottom: 20px;
-  font-size: 24px;
-}
-
-.contacs p {
-  max-width: 600px;
-  margin: 0 auto 10px auto;
-  line-height: 1.6;
-}
-
-.site-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  flex-wrap: wrap;
-  font-size: 14px;
-  background-color: #000;
-  color: #fff;
-}
-
-.site-footer a {
-  color: #2196f3;
-  text-decoration: none;
-}
-
-.site-footer a:hover {
-  text-decoration: underline;
-}
-
-.footer-left,
-.footer-right {
-  margin: 5px 0;
+.contact-btn:hover {
+    background-color: white;
+    color: #333;
 }
