@@ -17,25 +17,29 @@ body {
 
 .navbar-inner {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  flex-wrap: wrap;
+  row-gap: 15px;
 }
 
 .logo {
   font-size: 1.8em;
   font-family: "Pacifico", serif;
   white-space: nowrap;
+  flex: 1 1 auto;
+  text-align: left;
 }
 
 .nav-links {
   display: flex;
-  gap: 25px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+  flex: 2 1 300px;
 }
 
 .nav-links a {
@@ -43,6 +47,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   padding: 5px 10px;
+  white-space: nowrap;
 }
 
 .contact-btn {
@@ -53,64 +58,10 @@ body {
   text-decoration: none;
   transition: 0.2s;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .contact-btn:hover {
   background-color: white;
   color: #222;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .navbar-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-  }
-
-  .navbar-row-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 20px;
-  }
-
-  .navbar-row-bottom {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  .contact-btn {
-    margin: 0;
-    width: auto;
-    max-width: 150px;
-    text-align: center;
-    white-space: nowrap;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar-inner {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .nav-links {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
 }
