@@ -32,14 +32,13 @@ body {
   white-space: nowrap;
   flex: 1 1 auto;
   text-align: left;
+  text-decoration: none;
+  color: white;
 }
 
 .nav-links {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex: 2 1 300px;
+ flex: 2 1 300px;
+  text-align: center;
 }
 
 .nav-links a {
